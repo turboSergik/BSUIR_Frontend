@@ -206,17 +206,20 @@ width: 100%;
 }
 
 .msg_send_btn {
-background: #05728f;
+/* background: #05728f; */
 border:none;
 border-radius: 50%;
 color: #fff;
 cursor: pointer;
 font-size: 15px;
-height: 33px;
+height: 40px;
 position: absolute;
 right: 0;
 top: 11px;
-width: 33px;
+width: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .msg_history {
