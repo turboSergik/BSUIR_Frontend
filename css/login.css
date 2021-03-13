@@ -1,0 +1,48 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 99vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 390px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 77px 55px 33px;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+    -o-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
+    -ms-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
+}
+
+.form__title {
+    width: max-content;
+    margin-top: 26px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.form__submit {
+    width: 90%;
+    margin-top: 20px;
+}
+
+.form__input {
+    margin-bottom: 37px;
+}
+
+.form__additional {
+    margin-top: 115px;
+}
