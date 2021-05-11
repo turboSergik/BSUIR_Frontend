@@ -14,21 +14,29 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
 </head>
 
 <body>
 
     <div class="inbox_msg">
         <div class="inbox_people">
+
+
             <div class="headind_srch">
                 <div class="recent_heading">
-                    <a class="button" href="login.html">Login</a>
-                    <a style="margin-left: 25px;" class="button button-danger" href="login.html">Logout</a>
+                    <a id='login_button' class="button" href="login.html">Login</a>
+                    <a id='logout_button' style="margin-left: 25px;" class="button button-danger" , onclick="logoutClick()">Logout</a>
                 </div>
             </div>
+
+
+
+            <!--    USERS SECTION     -->
             <div class="inbox_chat scroll">
-                <div class="chat_list">
+                <div class="chat_list" id='chat_list'>
+
+
                     <div class="chat active_chat">
                         <div class="chat_img">
                             <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
@@ -38,6 +46,8 @@
                             <p>New message</p>
                         </div>
                     </div>
+
+
                     <div class="chat">
                         <div class="chat_img">
                             <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
@@ -47,26 +57,33 @@
                             <p>New message New message New message New message New message New message New message New message </p>
                         </div>
                     </div>
+
                 </div>
 
-                <button style="bottom: 90px; right: 11px; position: absolute;" class="button">Add new User</button>
             </div>
         </div>
 
+
+
         <div class="mesgs">
-            <div class="msg_history">
+            <div class="msg_history" id='msg_history'>
+
+
                 <div class="outgoing_msg">
                     <div class="sent_msg">
                         <p>Test message from MySelf</p>
                         <span class="time_date"> 11:01 AM</span>
                     </div>
                 </div>
+
+
                 <div class="outgoing_msg">
                     <div class="sent_msg">
                         <p>Test message from MySelf</p>
                         <span class="time_date"> 11:01 AM</span>
                     </div>
                 </div>
+
                 <div class="incoming_msg">
                     <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
                     </div>
@@ -77,12 +94,16 @@
                         </div>
                     </div>
                 </div>
+
+
                 <div class="outgoing_msg">
                     <div class="sent_msg">
                         <p>Test message from MySelf Test message from MySelf Test message from MySelf Test message from MySelf Test message from MySelfTest message from MySelf`</p>
                         <span class="time_date"> 11:01 AM</span>
                     </div>
                 </div>
+
+
                 <div class="incoming_msg">
                     <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
                     </div>
@@ -93,6 +114,8 @@
                         </div>
                     </div>
                 </div>
+
+
                 <div class="incoming_msg">
                     <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
                     </div>
@@ -103,6 +126,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="incoming_msg">
                     <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
                     </div>
@@ -127,8 +151,8 @@
             </div>
             <div class="type_msg">
                 <div class="input_msg_write">
-                    <input type="text" class="write_msg" placeholder="Type a message">
-                    <button class="msg_send_btn" type="button"><img alt="Send icon" src="images/sent_icon3.png" style="width: 100%;"></button>
+                    <input type="text" class="write_msg" id='message_text' placeholder="Type a message">
+                    <button class="msg_send_btn" type="button"><img alt="Send icon" src="images/sent_icon3.png" style="width: 100%;" onclick="sendMessage()"></button>
                 </div>
             </div>
         </div>
