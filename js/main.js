@@ -234,6 +234,8 @@ function chatOnClick(id) {
     let data = window.localStorage;
     let before = data.getItem('picked');
 
+    data.clear();
+
     let before_elem = document.getElementById("list_" + before);
     let picked_elem = document.getElementById("list_" + id);
 
