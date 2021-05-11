@@ -112,6 +112,23 @@ body {
     float: left;
     padding: 0 0 0 15px;
     width: 88%;
+    user-select: none;
+}
+
+.chat_ib::selection {
+    background: none;
+}
+
+.chat_ib::-moz-selection {
+    background: none;
+}
+
+.chat_list::selection {
+    background: none;
+}
+
+.chat_list::-moz-selection {
+    background: none;
 }
 
 .chat {
@@ -130,6 +147,7 @@ body {
 .chat_list {
     border-bottom: 1px solid #ddd;
     margin: 0;
+    user-select: none;
 }
 
 .inbox_chat::-webkit-scrollbar {

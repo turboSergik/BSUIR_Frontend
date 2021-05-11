@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="js/login.js"></script>
+    <script src="js/register.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="form">
-            <h1 class="form__title">Welcome</h1>
+            <h1 class="form__title">Sign up</h1>
             <input id="input_login" class="input form__input" placeholder="Email">
             <input id="input_password" class="input form__input" placeholder="Password" type="password">
-            <button id="login_click" class="button form__submit" onclick="onClickEvent()">LOGIN</button>
-            <p class="form__additional">Don’t have an account? <a href="/register.html"> Sign Up</a></p>
+            <button id="login_click" class="button form__submit" onclick="onClickRegisterEvent()">Register</button>
+            <a class="form__additional" onclick="history.back()"> Go back</a>
             </form>
         </div>
 </body>
