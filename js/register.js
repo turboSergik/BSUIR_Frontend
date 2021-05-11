@@ -1,13 +1,13 @@
 function onClickRegisterEvent() {
 
-    email = document.getElementById('input_login').value
-    password = document.getElementById('input_password').value
-    console.log("Email=", email, " Password=", password)
+    email = document.getElementById('input_login').value;
+    password = document.getElementById('input_password').value;
+    console.log("Email=", email, " Password=", password);
 
     data = window.localStorage;
 
-    users = JSON.parse(data.getItem("users"));
-    current = users.find(item => item.login == email)
+    users = JSON.parse(data.getItem("users")) || [];
+    current = users.find(item => item.login == email);
 
     if (email.length == 0 || password.length == 0) {
         alert("Enter Email and password!")
